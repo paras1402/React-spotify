@@ -10,9 +10,7 @@ export const Player = ({ spotify }) => {
         <Sidebar />
         <Body spotify={spotify} />
       </div>
-      <Footer></Footer>
-
-      {/* footer */}
+      <Footer spotify={spotify}></Footer>
     </div>
   );
 };

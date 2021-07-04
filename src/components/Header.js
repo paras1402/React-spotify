@@ -4,9 +4,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
 import { useDataLayerValue } from "../DataLayer";
 const Header = () => {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ user }, dispatch] = useDataLayerValue();
 
-  console.log(user);
   return (
     <div>
       <div className="header">
