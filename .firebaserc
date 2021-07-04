@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tiktok-mern-cbbc8"
+  },
+  "targets": {
+    "tiktok-mern-cbbc8": {
+      "hosting": {
+        "spotify": [
+          "spotify-react-10"
+        ]
+      }
+    }
+  }
+}

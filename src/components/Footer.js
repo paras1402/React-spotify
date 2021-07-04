@@ -75,11 +75,19 @@ const Footer = ({ spotify }) => {
   return (
     <div className="footer">
       <div className="footer__left">
-        <img
-          className="footer__albumLogo"
-          src={item?.album.images[0].url}
-          alt={item?.name}
-        />
+        {item ? (
+          <img
+            className="footer__albumLogo"
+            src={item?.album.images[0].url}
+            alt={item?.name}
+          />
+        ) : (
+          <img
+            className="footer__albumLogo"
+            src="https://upload.wikimedia.org/wikipedia/en/e/e8/Chris_brown_4ever.jpg"
+            alt="forever"
+          />
+        )}
 
         {item ? (
           <div className="footer__songInfo">
@@ -88,8 +96,8 @@ const Footer = ({ spotify }) => {
           </div>
         ) : (
           <div className="footer__songInfo">
-            <h4>No song is playing</h4>
-            <p>...</p>
+            <h4>Chris Brown</h4>
+            <p>Forever</p>
           </div>
         )}
       </div>
